@@ -1,0 +1,47 @@
+.character_container {
+  width: 85vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+  .character_block {
+    width: 100%;
+    height: 95%;
+    .level_panel {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      color: #65f4a8;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 20px;
+      .text_level {
+        text-shadow: 0 0 20px #44cd83;
+      }
+    }
+    .header_block {
+      width: 100%;
+      border-top: 1px solid #91fbdc;
+      border: 0px 2px;
+      display: flex;
+
+      .navigate {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+      }
+      .navigation_button {
+        width: 20%;
+        height: 40px;
+        border: 1px solid #91fbdc;
+        border-top: 0;
+        margin-right: 5px;
+        border-radius: 0 0px 10px 10px;
+        color: #28fdf9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //  text-shadow: 0 0 20px #28FDF9;
+      }
+    }
+  }
+}

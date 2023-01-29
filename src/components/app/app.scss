@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  margin: 0;
+  
+}
+.app_container {
+  display: flex;
+  background: linear-gradient(45deg, #091124, #172645, #0b1835);
+  animation: gradient 10s ease infinite;
+  background-size: 300% 300%;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
