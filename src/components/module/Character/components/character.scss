@@ -20,10 +20,8 @@
     }
     .header_block {
       width: 100%;
-      border-top: 1px solid #91fbdc;
       border: 0px 2px;
       display: flex;
-
       .navigate {
         width: 100%;
         display: flex;
@@ -32,9 +30,9 @@
       .navigation_button {
         width: 20%;
         height: 40px;
-        border: 1px solid #91fbdc;
         border-top: 0;
         margin-right: 5px;
+        background-color: #0f1c3a;
         border-radius: 0 0px 10px 10px;
         color: #28fdf9;
         display: flex;

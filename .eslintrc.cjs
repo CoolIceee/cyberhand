@@ -11,10 +11,10 @@ module.exports = {
   extends: ['plugin:react/recommended', 'standard-with-typescript', 'prettier'],
   overrides: [
     {
-      files: ['*.ts', '*.tsx']
-      // parserOptions: {
-      //   project: ['./tsconfig.node.json']
-      // }
+      files: ['*.ts', '*.tsx'],
+      parserOptions: {
+        project: ['./tsconfig.json']
+      }
     }
   ],
   parserOptions: {
