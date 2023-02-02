@@ -1,45 +1,67 @@
-.categories_navigate_container {
-  width: 100%;
-  height: 60%;
+.categories_container {
   list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 3rem;
+  height: auto;
+  padding: 2rem 0 0 0;
   li {
-    width: 50%;
-    height: auto;
-    padding: 35px 0 0 0;
-    position: relative;
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
+    padding: 2.5rem 0 0 0;
+    width: 10rem;
+    display: flex;
+    .categories_block {
+      width: 30%;
+      height: auto;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+      }
+    }
+    .text_main {
+      width: 70%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      span {
+        width: 0;
+        white-space: nowrap;
+        padding: 0 0 0 1rem;
+        font-size: 1rem;
+        color: white;
+        overflow: hidden;
+        font-family: 'Jost', sans-serif;
+      }
     }
   }
 }
-
-.profile_style {
-  width: 100%;
-  height: 95%;
-  box-shadow: 0 0 10px rgb(0, 162, 255);
-  border-radius: 10px;
+.profile {
+  box-shadow: 0 0 1rem rgb(0, 128, 255);
 }
-.skils_style {
-  width: 100%;
-  height: 95%;
-  box-shadow: 0 0 10px rgb(238, 255, 0);
-  border-radius: 10px;
+.skils {
+  box-shadow: 0 0 1rem rgb(255, 238, 0);
 }
-.folder_style {
-  width: 100%;
-  height: 95%;
-  box-shadow: 0 0 10px rgb(255, 0, 0);
-  border-radius: 10px;
+.folder {
+  box-shadow: 0 0 1rem rgb(255, 0, 0);
 }
-.contact_style {
-  width: 100%;
-  height: 95%;
-  box-shadow: 0 0 10px rgb(170, 0, 255);
-  border-radius: 10px;
+.contact {
+  box-shadow: 0 0 1rem rgb(153, 0, 255);
+}
+.profile_text {
+  background-color: #3273c4;
+  box-shadow: 0 0 1rem rgb(0, 128, 255);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.profile_skils {
+  background-color: #cdb73c;
+  box-shadow: 0 0 1rem rgb(255, 238, 0);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.profile_folder {
+  background-color: #cc2d20;
+  box-shadow: 0 0 1rem rgb(255, 0, 0);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.profile_contact {
+  background-color: #7214ad;
+  box-shadow: 0 0 1rem rgb(153, 0, 255);
+  border-radius: 0 0.5rem 0.5rem 0;
 }

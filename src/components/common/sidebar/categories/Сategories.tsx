@@ -9,28 +9,49 @@ interface CategoriesProps {
   openSlider: boolean
   setOpenSlider: React.Dispatch<React.SetStateAction<boolean>>
 }
-export const Categories: React.FC<CategoriesProps> = ({openSlider, setOpenSlider}) => {
+export const Categories: React.FC<CategoriesProps> = ({ openSlider, setOpenSlider }) => {
+  const textEffect = openSlider ? { width: '90%', transition: 'all 0.6s ease-out' } : { transition: 'all 0.5s ease-out' }
   return (
     <>
-      <ul className='categories_navigate_container'>
+      <ul className='categories_container'>
         <li>
-          <div className='profile_style'>
-            <img src={profile} />
+          <div className='categories_block'>
+            <img className='profile' src={profile} />
+          </div>
+          <div className='text_main'>
+            <span className='profile_text' style={textEffect}>
+              Обо мне
+            </span>
           </div>
         </li>
         <li>
-          <div className='skils_style'>
-            <img src={skils} />
+          <div className='categories_block'>
+            <img className='skils' src={skils} />
+          </div>
+          <div className='text_main'>
+            <span className='profile_skils' style={textEffect}>
+              Навыки
+            </span>
           </div>
         </li>
         <li>
-          <div className='folder_style'>
-            <img src={folder} />
+          <div className='categories_block'>
+            <img className='folder' src={folder} />
+          </div>
+          <div className='text_main'>
+            <span className='profile_folder' style={textEffect}>
+              Проекты
+            </span>
           </div>
         </li>
         <li>
-          <div className='contact_style'>
-            <img src={contact} />
+          <div className='categories_block'>
+            <img className='contact' src={contact} />
+          </div>
+          <div className='text_main'>
+            <span className='profile_contact' style={textEffect}>
+              Контакты
+            </span>
           </div>
         </li>
       </ul>

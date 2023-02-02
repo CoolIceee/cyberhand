@@ -9,7 +9,6 @@ export const OpeningAndClosing: React.FC<OpeningAndClosingProps> = ({ openSlider
   const handleClickOpenSlider = (): void => {
     setOpenSlider(!openSlider)
   }
-  console.log(setOpenSlider)
   return (
     <div className='openndclosing_container'>
       <button
