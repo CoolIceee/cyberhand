@@ -14,7 +14,7 @@ export const Sidebar: React.FC = () => {
           <div className='img_container_bar'>
             <img src={logo} />
           </div>
-          <Categories openSlider={openSlider} setOpenSlider={setOpenSlider} />
+          {/* <Categories openSlider={openSlider} setOpenSlider={setOpenSlider} /> */}
         </div>
       </div>
     </div>
