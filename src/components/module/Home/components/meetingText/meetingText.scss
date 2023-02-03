@@ -1,0 +1,96 @@
+.meeting_container {
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Kodchasan', sans-serif;
+  .welcome_text_container {
+    width: 100%;
+    display: flex;
+    .line_container {
+      width: 10%;
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .line_border {
+        width: 0.2rem;
+        border-radius: 1rem;
+        margin-top: 2rem;
+        height: 5rem;
+        background-color: #b9b9b9;
+      }
+      .tg_style {
+        width: auto;
+        height: 10%;
+        margin-top: 0.5rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .github_style {
+        margin-top: 1rem;
+        width: auto;
+        height: 10%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .text_style {
+      width: 70%;
+      margin-top: 5rem;
+      font-size: 4rem;
+      color: white;
+      .text_style_feel {
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.665);
+        margin-top: 1.5rem;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .contact_container {
+    width: 100%;
+    p {
+      width: 11rem;
+      height: 3.5rem;
+      margin: 0;
+      margin-top: 4rem;
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      font-size: 1.4rem;
+      align-items: center;
+      border-radius: 0.5rem;
+      border: 0.2rem solid #c43bff;
+      color: #c43bff;
+    }
+  }
+  .email_container{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    .email_flex_bottom_end{
+      display: flex;
+      align-items: center;
+      .image_email_container{
+        width: auto;
+        height: 1.5rem;
+        margin-right: 0.3rem;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      p{
+        color: #b9b9b9;
+      }
+   
+    }
+  }
+}

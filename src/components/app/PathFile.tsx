@@ -1,9 +1,10 @@
-import { CharacterPage } from '../../page/CharacterPage'
+import { HomePage } from '../../page/HomePage'
 
+import './app.scss'
 export const PathFile: React.FC = () => {
   return (
-    <>
-      <CharacterPage />
-    </>
+    <div className='main_container'>
+      <HomePage />
+    </div>
   )
 }

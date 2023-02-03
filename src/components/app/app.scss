@@ -5,16 +5,17 @@ body {
 }
 .app_container {
   display: flex;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 100%;
-  }
-  50% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 0% 100%;
+  .main_container {
+    width: 85vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .home_container {
+      width: 95%;
+      height: 90%;
+      background-color: #2f173d;
+      border-radius: 2rem;
+    }
   }
 }
