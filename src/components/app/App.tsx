@@ -7,7 +7,7 @@ export const App: React.FC = () => {
   return (
     <div className='app_container'>
       <Sidebar />
-      {/* <PathFile /> */}
+      <PathFile />
     </div>
   )
 }

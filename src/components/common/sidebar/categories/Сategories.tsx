@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 import contact from '../../../../assets/menu/contact.png'
 import folder from '../../../../assets/menu/folder.png'
 import profile from '../../../../assets/menu/profile.png'
@@ -18,9 +20,9 @@ export const Categories: React.FC<CategoriesProps> = ({ openSlider, setOpenSlide
           </div>
         </li>
         <li>
-          <div className='categories_block'>
+          <NavLink to='skills' className='categories_block'>
             <img className='skils' src={skils} />
-          </div>
+          </NavLink>
         </li>
         <li>
           <div className='categories_block'>

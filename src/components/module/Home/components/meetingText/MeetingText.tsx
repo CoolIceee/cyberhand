@@ -1,4 +1,6 @@
-import email from "../../../../../assets/email.png"
+import Aos from 'aos'
+
+import email from '../../../../../assets/email.png'
 import github from '../../../../../assets/github.png'
 import tg from '../../../../../assets/tg.png'
 
@@ -8,9 +10,9 @@ export const MeetingText: React.FC = () => {
     <div className='meeting_container'>
       <div className='welcome_text_container'>
         <div className='text_style'>
-          <p>Hello 👋</p>
-          Glad to see you on this page
-          <div className='text_style_feel'>Feel free to contact me - I will only be happy to chat</div>
+          <p className='hello_style'>Hello 👋</p>
+          <p className='text_after_the_cast'>Glad to see you on this page</p>
+          <p className='text_style_feel'>Feel free to contact me - I will only be happy to chat</p>
         </div>
         <div className='line_container'>
           <div className='line_border'>

@@ -1,12 +1,18 @@
 .meeting_container {
-  width: 90%;
+  width: 80%;
+  height: 100%;
   margin: 0 auto;
   font-family: 'Kodchasan', sans-serif;
   .welcome_text_container {
     width: 100%;
+    height: 50%;
     display: flex;
+    position: relative;
     .line_container {
+      position: absolute;
       width: 10%;
+      top: 0;
+      right: 0;
       margin-left: auto;
       display: flex;
       align-items: center;
@@ -38,17 +44,34 @@
       }
     }
     .text_style {
-      width: 70%;
-      margin-top: 5rem;
+      width: 100%;
       font-size: 4rem;
       color: white;
+      position: relative;
       .text_style_feel {
+        margin: 0;
         font-size: 1.5rem;
         color: rgba(255, 255, 255, 0.665);
-        margin-top: 1.5rem;
+        position: absolute;
+        top: 95%;
+
       }
-      p {
+      .hello_style {
+        position: absolute;
         margin: 0;
+        transition: transform 1s;
+        opacity: 0;
+        top: 20%;
+        animation: 1s welcomeTextAnimation forwards;
+      }
+      .text_after_the_cast {
+        top: 45%;
+        margin: 0;
+        width: 70%;
+        word-wrap: break-word;
+        opacity: 0;
+        position: absolute;
+        animation: 1s textAfterTheCastAnimation forwards;
       }
     }
   }
@@ -69,33 +92,42 @@
       color: #c43bff;
     }
   }
-  .email_container{
+  .email_container {
     width: 100%;
     height: 10rem;
     display: flex;
     justify-content: end;
     align-items: end;
-    .email_flex_bottom_end{
+    .email_flex_bottom_end {
       display: flex;
       align-items: center;
-      .image_email_container{
+      .image_email_container {
         width: auto;
         height: 1.5rem;
         margin-right: 0.3rem;
-        img{
+        img {
           width: 100%;
           height: 100%;
         }
       }
-      p{
+      p {
         color: #b9b9b9;
       }
-   
     }
   }
 }
 
-
 @media screen and (man-width: 390px) {
-  
+}
+@keyframes welcomeTextAnimation {
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes textAfterTheCastAnimation {
+  100% {
+    left: 0;
+    opacity: 1;
+  }
 }
